@@ -4,7 +4,7 @@
 
 // Configuration
 const CONFIG = {
-    API_KEY: 'OMDb API Key потрібен для роботи додатку',
+    API_KEY: '362c895e',
     BASE_URL: 'https://www.omdbapi.com/',
     SEARCH_DELAY: 500, // Затримка в ms перед запитом до API
     MIN_SEARCH_LENGTH: 2, // Мінімальна довжина запиту
