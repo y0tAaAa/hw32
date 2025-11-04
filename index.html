@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 MovieFinder - Пошук Фільмів</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">🎬 MovieFinder</h1>
+                <p class="subtitle">Знайдіть ваш улюблений фільм миттєво</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="search-section">
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input" 
+                        placeholder="Введіть назву фільму..." 
+                        autocomplete="off"
+                    >
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="search-info" id="searchInfo"></div>
+            </div>
+
+            <div class="results-section">
+                <div id="loadingSpinner" class="loading-spinner hidden">
+                    <div class="spinner"></div>
+                    <p>Завантаження фільмів...</p>
+                </div>
+
+                <div id="errorMessage" class="error-message hidden"></div>
+
+                <div id="resultsContainer" class="results-grid">
+                    <!-- Результати пошуку будуть вставлені сюди -->
+                </div>
+
+                <div id="emptyState" class="empty-state">
+                    <div class="empty-icon">🎥</div>
+                    <p>Почніть вводити назву фільму для пошуку</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Дані надаються через <a href="https://www.omdbapi.com/" target="_blank">OMDb API</a></p>
+            <p class="version">v1.0</p>
+        </footer>
+    </div>
+
+    <!-- Модальне вікно для деталей фільму -->
+    <div id="movieModal" class="modal hidden">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div id="movieDetails"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
