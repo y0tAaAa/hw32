@@ -1,0 +1,22 @@
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if used in future)
+node_modules/
+package-lock.json
+
+# Environment
+.env
+.env.local
+
+# Cache
+.cache/
+*.log
